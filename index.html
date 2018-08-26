@@ -51,6 +51,8 @@
   <link rel="stylesheet" href="static/font/iran-sans/css/fontiran.css" />
   <link rel="stylesheet" href="static/font_num/css/fontiran.css" />
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/owl-carousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="static/owl-carousel/css/owl.theme.default.min.css" />
   <link href="static/main.css" rel="stylesheet" />
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-123983659-1"></script>
   <script>
@@ -83,7 +85,7 @@
   <!-- navigation -->
   <nav class="navbar navbar-default navbar-fixed navbar-transparent dark bootsnav">
     <!-- Start Top Search -->
-    <div class="top-search">
+    <section class="top-search">
       <div class="container">
         <div class="input-group">
           <span class="input-group-addon">
@@ -95,14 +97,15 @@
                     </span>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- End Top Search -->
     <div class="container">
       <!-- Start Atribute Navigation -->
       <div class="attr-nav">
         <ul>
-          <li class="search">
-            <a href="#">
+          <li class="search hidden-xs hidden-sm">
+            <a class="open-searchbox" href="#">
               <i class="fa fa-search"></i>
             </a>
           </li>
@@ -130,10 +133,13 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-          <li>
+          <li class="hidden-xs hidden-sm">
             <a href="/">
               <i class="fas fa-website"></i>
             </a>
+          </li>
+          <li>
+            <input type="email" class="form-control searchbox-xs" placeholder="جستجو کنید ...">
           </li>
           <li>
             <a href="/samples/">نمونه کار</a>
@@ -216,7 +222,7 @@
     <article class="genius-or-normal">
       <div class="container">
         <div class="row">
-          <div class="genius pd-100 line-center col-md-6 col-sm-12 col-xs-12">
+          <div class="genius line-center col-md-6 col-sm-12 col-xs-12">
             <div class="text-center">
               <h2>من یک نابغه هستم</h2>
               <p>برای افرادی که عضو
@@ -225,7 +231,7 @@
                                 کنید و یا در بخش تماس با ما مشکل خود را با تیم پشتیبانی در میان بگذارید.</small>
             </div>
           </div>
-          <div class="genius pd-100 col-md-6 col-sm-12 col-xs-12">
+          <div class="genius col-md-6 col-sm-12 col-xs-12">
             <div class="text-center">
               <h2>من یک فرد معمولی هستم</h2>
               <p>افراد معمولی که شرایط نوابغ را ندارند نیز می توانند با مطالعه ی برنامه ی درآمدزایی پنل از خدمات ما استفاده کنند. (در حال به روز رسانی)</p>
@@ -239,7 +245,7 @@
     <section class="customer-servicer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-sm-6">
             <div class="customer-service">
               <div class="service-icon">
                 <span class="fa fa-globe"></span>
@@ -248,7 +254,7 @@
               <p class="description">با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-sm-6">
             <div class="customer-service red">
               <div class="service-icon">
                 <span class="fa fa-rocket"></span>
@@ -257,7 +263,7 @@
               <p class="description">با استفاده از پنل مدیریتی خود به راحتی می توانید بررسی کنید که پروژه تان در چه مرحله ای قرار دارد و تمامی اخبار در آنجا به شما داده می شود</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-md-4 col-lg-4 col-sm-12">
             <div class="customer-service darkblue">
               <div class="service-icon">
                 <span class="fa fa-briefcase"></span>
@@ -268,13 +274,43 @@
           </div>
         </div>
       </div>
+      <div id="owl-one" class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="customer-service">
+            <div class="service-icon">
+              <span class="fa fa-globe"></span>
+            </div>
+            <h3 class="title">حفظ سرمایه</h3>
+            <p class="description">با هزینه ای بسیار مناسب می توانید ایده و محصول خود را به انیمشن در بیاورید تا همه مخاطبین شما بتوانند کارهایتان را مشاهده کنند</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="customer-service red">
+            <div class="service-icon">
+              <span class="fa fa-rocket"></span>
+            </div>
+            <h3 class="title">تجربه ای جدید</h3>
+            <p class="description">با استفاده از پنل مدیریتی خود به راحتی می توانید بررسی کنید که پروژه تان در چه مرحله ای قرار دارد و تمامی اخبار در آنجا به شما داده می شود</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="customer-service darkblue">
+            <div class="service-icon">
+              <span class="fa fa-briefcase"></span>
+            </div>
+            <h3 class="title">صرفه جویی در زمان</h3>
+            <p class="description">تنها برای انیمشن کردن ایده شما کافیست سفارش خود را ثبت کنید تا همکاران ما با شما تماس گرفته و به ظرافت ایده تان پیاده سازی شود</p>
+          </div>
+        </div>
+      </div>
+
     </section>
-    <section class="ordering-process" style="padding: 100px;">
+    <section class="ordering-process">
       <div class="container">
         <div class="row text-center">
           <h2 class="white">مراحل سفارش دهی در انیمیتد آیدیا</h2>
         </div>
-        <div class="row">
+        <div class="row tree-off">
           <div class="col-md-12">
             <div class="main-timeline">
               <div class="timeline">
@@ -282,7 +318,7 @@
                   <i class="fa fa-globe"></i>
                 </div>
                 <div class="timeline-content" style="float: left; direction: rtl;">
-                  <h4 class="title">01. ثبت نام</h4>
+                  <h4 class="title"><span>1</span>. ثبت نام</h4>
                   <p class="description">پس از ثبت نام، شما می توانید در پنل مدیریتی خود به راحتی پروژه های خود را مدیریت کنید.</p>
                 </div>
                 <div class="border"></div>
@@ -292,7 +328,7 @@
                   <i class="fa fa-rocket"></i>
                 </div>
                 <div class="timeline-content">
-                  <h4 class="title">02. ثبت سفارش و طراحی انیمیشن</h4>
+                  <h4 class="title"><span>2</span>. ثبت سفارش و طراحی انیمیشن</h4>
                   <p class="description">پس از ثبت سفارش خود در پنل مدیریتی، تیم طراحی با دقت تمامی توضیحات و اطلاعاتی را که در داشبوردتان وارد کرده اید، مطالعه کرده و با خلاقیت و ظرافت آغاز به طراحی انیمیشن شما می کنیم.</p>
                 </div>
                 <div class="border"></div>
@@ -302,7 +338,7 @@
                   <i class="fa fa-briefcase"></i>
                 </div>
                 <div class="timeline-content" style="float: left; direction: rtl;">
-                  <h4 class="title">03. تحویل پروژه</h4>
+                  <h4 class="title"><span>3</span>. تحویل پروژه</h4>
                   <p class="description" style="float: left;">در نهایت بعد از بررسی و طراحی انیمیشن ابتدا توسط ایمیل و تیکت به شما اطلاع داده می شود. بنابراین به راحتی می توانید سفارشتان را از پنل مدیریتیتان دانلود نمایید.</p>
                 </div>
                 <div class="border"></div>
@@ -310,10 +346,20 @@
             </div>
           </div>
         </div>
+        <div class="tree-on">
+          <h4 class="title"><span>1</span>. ثبت نام</h4>
+          <p class="description">پس از ثبت نام، شما می توانید در پنل مدیریتی خود به راحتی پروژه های خود را مدیریت کنید.</p>
+          <hr>
+          <h4 class="title"><span>2</span>. ثبت سفارش و طراحی انیمیشن</h4>
+          <p class="description">پس از ثبت سفارش خود در پنل مدیریتی، تیم طراحی با دقت تمامی توضیحات و اطلاعاتی را که در داشبوردتان وارد کرده اید، مطالعه کرده و با خلاقیت و ظرافت آغاز به طراحی انیمیشن شما می کنیم.</p>
+          <hr>
+          <h4 class="title"><span>3</span>. تحویل پروژه</h4>
+          <p class="description" style="float: left;">در نهایت بعد از بررسی و طراحی انیمیشن ابتدا توسط ایمیل و تیکت به شما اطلاع داده می شود. بنابراین به راحتی می توانید سفارشتان را از پنل مدیریتیتان دانلود نمایید.</p>
+        </div>
       </div>
     </section>
     <section class="sponsers">
-      <div class="container">
+      <div class="container width-full">
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-4">
             <img alt="Image" class="img-responsive" src="static/img/sponser-1.svg" />
@@ -326,10 +372,21 @@
           </div>
         </div>
       </div>
+      <div class="sponsers-slide">
+        <div id="owl-two" class="owl-carousel owl-theme">
+          <div class="item">
+            <img alt="Image" class="img-responsive" src="static/img/sponser-1.svg" />
+          </div>
+          <div class="item">
+            <img alt="Image" class="img-responsive" src="static/img/sponser-2.svg" />
+          </div>
+          <img alt="Image" class="img-responsive" src="static/img/sponser-3.svg" />
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-    <div class="container">
+    <div class="container width-full">
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="widget_title">
@@ -377,7 +434,7 @@
                         </div>
                     </address>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-12 hidden-xs">
           <div class="widget_title">
             <h4>
                             <span>نمونه کار</span>
@@ -456,6 +513,7 @@
   <!-- Bootsnav JavaScript -->
   <script src='static/vendor/OwlCarousel/owl.carousel.min.js'></script>
   <script src='static/vendor/bootsnav-master/js/bootsnav.js'></script>
+  <script src="static/owl-carousel/js/owl.carousel.js"></script>
   <script src="static/main.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript">
