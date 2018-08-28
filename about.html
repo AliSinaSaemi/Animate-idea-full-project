@@ -51,6 +51,8 @@
   <link rel="stylesheet" href="static/font/iran-sans/css/fontiran.css" />
   <link rel="stylesheet" href="static/font_num/css/fontiran.css" />
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/owl-carousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="static/owl-carousel/css/owl.theme.default.min.css" />
   <link href="static/main.css" rel="stylesheet" />
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-123983659-1"></script>
   <script>
@@ -83,26 +85,27 @@
   <!-- navigation -->
   <nav class="navbar navbar-default navbar-fixed navbar-transparent dark bootsnav">
     <!-- Start Top Search -->
-    <div class="top-search">
+    <section class="top-search">
       <div class="container">
         <div class="input-group">
           <span class="input-group-addon">
                         <i class="fa fa-search"></i>
                     </span>
-          <input class="form-control" placeholder="جستجو" type="text" />
+          <input class="form-control" placeholder="جستجو کنید ..." type="text" />
           <span class="input-group-addon close-search">
                         <i class="fa fa-times"></i>
                     </span>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- End Top Search -->
     <div class="container">
       <!-- Start Atribute Navigation -->
       <div class="attr-nav">
         <ul>
-          <li class="search">
-            <a href="#">
+          <li class="search hidden-xs hidden-sm">
+            <a class="open-searchbox" href="#">
               <i class="fa fa-search"></i>
             </a>
           </li>
@@ -130,15 +133,18 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-          <li>
+          <li class="hidden-xs hidden-sm">
             <a href="/">
               <i class="fas fa-website"></i>
             </a>
           </li>
           <li>
-            <a href="/samples/">نمونه کار</a>
+            <input type="email" class="form-control searchbox-xs" placeholder="جستجو کنید ...">
           </li>
           <li>
+            <a href="/samples/">نمونه کار</a>
+          </li>
+          <li class="active">
             <a href="/about/">درباره ما</a>
           </li>
           <li>
@@ -167,7 +173,7 @@
       <ul class="list-inline">
         <li>خانه</li>
         <li>
-          <i class="fas fa-arrow-right"></i>
+          <i class="fas fa-arrow-left"></i>
         </li>
         <li>درباره ما</li>
       </ul>
@@ -176,12 +182,12 @@
   </div>
   <main>
     <section class="about-us">
-      <div class="container">
+      <div class="container width-full">
         <div class="row">
-          <div class="col-md-6">
+          <div class="image">
             <img alt="Image" class="img-responsive" src="static/img/1473708380078.gif" />
           </div>
-          <div class="col-md-6">
+          <div class="content">
             <h6>ما به برند شما کمک می کنیم تا</h6>
             <h3>معرفی و شناخته شود</h3>
             <p>خیلی وقت ها شما ایده هایی دارید که برای بیان آن نیاز دارید تا انیمیشن آن ها را بسازید و ایده تان را به شکل انیمیشنی توصیف کیند. همچنین شما می توانید با کمک مشاورین ما بصورت آنلاین مشاوره بگیرید تا بیاموزید چگونه در شبکه های اجتماعیتان این انیمیشن ها را به نمایش در بیاورید تا بیشترین بازخورد را از نمایش آن داشته باشید.</p>
@@ -198,7 +204,7 @@
     </section>
   </main>
   <footer>
-    <div class="container">
+    <div class="container width-full">
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="widget_title">
@@ -238,15 +244,15 @@
                                 </li>
                                 <li>
                                     <i class="fas fa-envelope"></i>
-                                    <a href="/cdn-cgi/l/email-protection#5b3a3532363a2f3e323f3e3a1b3c363a323775383436">
-                                        <span class="__cf_email__" data-cfemail="e3828d8a8e8297868a878682a3848e828a8fcd808c8e">[email&#160;protected]</span>
+                                    <a href="/cdn-cgi/l/email-protection#12737c7b7f7366777b76777352757f737b7e3c717d7f">
+                                        <span class="__cf_email__" data-cfemail="70111e191d1104151914151130171d11191c5e131f1d">[email&#160;protected]</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </address>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-12 hidden-xs">
           <div class="widget_title">
             <h4>
                             <span>نمونه کار</span>
@@ -325,6 +331,7 @@
   <!-- Bootsnav JavaScript -->
   <script src='static/vendor/OwlCarousel/owl.carousel.min.js'></script>
   <script src='static/vendor/bootsnav-master/js/bootsnav.js'></script>
+  <script src="static/owl-carousel/js/owl.carousel.js"></script>
   <script src="static/main.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript">

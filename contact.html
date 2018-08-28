@@ -45,16 +45,15 @@
   <meta content="طراحی انیمیشن و موشن گرافیک برای کسب و کارها" name="twitter:title" />
   <meta content="static/img/favicon/apple-icon-120x120.png" name="twitter:image" />
   <meta content="https://twitter.com/animate-ideas" name="twitter:site" />
-  <title>درباره ما | طراحی انیمیشن و موشن گرافیک</title>
+  <title>خانه | طراحی انیمیشن و موشن گرافیک</title>
   <!-- CDNs -->
-
-  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="static/font/iran-sans/css/fontiran.css" />
   <link rel="stylesheet" href="static/font_num/css/fontiran.css" />
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/owl-carousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="static/owl-carousel/css/owl.theme.default.min.css" />
   <link href="static/main.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-123983659-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -86,26 +85,27 @@
   <!-- navigation -->
   <nav class="navbar navbar-default navbar-fixed navbar-transparent dark bootsnav">
     <!-- Start Top Search -->
-    <div class="top-search">
+    <section class="top-search">
       <div class="container">
         <div class="input-group">
           <span class="input-group-addon">
                         <i class="fa fa-search"></i>
                     </span>
-          <input class="form-control" placeholder="جستجو" type="text" />
+          <input class="form-control" placeholder="جستجو کنید ..." type="text" />
           <span class="input-group-addon close-search">
                         <i class="fa fa-times"></i>
                     </span>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- End Top Search -->
     <div class="container">
       <!-- Start Atribute Navigation -->
       <div class="attr-nav">
         <ul>
-          <li class="search">
-            <a href="#">
+          <li class="search hidden-xs hidden-sm">
+            <a class="open-searchbox" href="#">
               <i class="fa fa-search"></i>
             </a>
           </li>
@@ -133,10 +133,13 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-          <li>
+          <li class="hidden-xs hidden-sm">
             <a href="/">
               <i class="fas fa-website"></i>
             </a>
+          </li>
+          <li>
+            <input type="email" class="form-control searchbox-xs" placeholder="جستجو کنید ...">
           </li>
           <li>
             <a href="/samples/">نمونه کار</a>
@@ -153,7 +156,7 @@
           <li>
             <a href="/home/tutorials/">آموزش</a>
           </li>
-          <li>
+          <li class="active">
             <a href="/contact/">تماس با ما</a>
           </li>
           <li>
@@ -168,21 +171,21 @@
   <div class="page-address">
     <div class="text-center">
       <ul class="list-inline">
-        <li>خانه</li>
+        <li><a href="#">خانه</a></li>
         <li>
-          <i class="fas fa-arrow-right"></i>
+          <i class="fas fa-arrow-left"></i>
         </li>
-        <li>تماس با ما</li>
+        <li><a href="#">تماس با ما</a></li>
       </ul>
       <h1>تماس با ما</h1>
     </div>
   </div>
-  <main style="padding: 100px;">
+  <main>
     <div class="form-bg">
-      <div class="container">
+      <div class="container width-full">
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
+          <div class="col-sm-2 col-md-3"></div>
+          <div class="col-sm-8 col-md-6">
             <div class="tab" role="tabpanel">
               <!-- Tab panes -->
               <div class="tab-content tabs">
@@ -208,20 +211,20 @@
                     <script src="https://www.google.com/recaptcha/api.js"></script>
                     <div class="g-recaptcha" data-sitekey="6Lf5zGUUAAAAAIQjgvUr0N_4dk3UjAoFf9v9ObvD"></div>
                     <center>
-                      <button class="btn btn-pink btn-pink-lg" type="submit">ثبت عملیات</button>
+                      <button class="btn no-animation" type="submit">ثبت عملیات</button>
                     </center>
                   </form>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3"></div>
+          <div class="col-sm-2 col-md-3"></div>
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <div class="container">
+    <div class="container width-full">
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="widget_title">
@@ -261,15 +264,15 @@
                                 </li>
                                 <li>
                                     <i class="fas fa-envelope"></i>
-                                    <a href="/cdn-cgi/l/email-protection#c4a5aaada9a5b0a1ada0a1a584a3a9a5ada8eaa7aba9">
-                                        <span class="__cf_email__" data-cfemail="bbdad5d2d6dacfded2dfdedafbdcd6dad2d795d8d4d6">[email&#160;protected]</span>
+                                    <a href="/cdn-cgi/l/email-protection#12737c7b7f7366777b76777352757f737b7e3c717d7f">
+                                        <span class="__cf_email__" data-cfemail="70111e191d1104151914151130171d11191c5e131f1d">[email&#160;protected]</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </address>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-12 hidden-xs">
           <div class="widget_title">
             <h4>
                             <span>نمونه کار</span>
@@ -346,7 +349,10 @@
   <!-- Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- Bootsnav JavaScript -->
-  <script src="static/site/main.min.js"></script>
+  <script src='static/vendor/OwlCarousel/owl.carousel.min.js'></script>
+  <script src='static/vendor/bootsnav-master/js/bootsnav.js'></script>
+  <script src="static/owl-carousel/js/owl.carousel.js"></script>
+  <script src="static/main.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/javascript">
     window.$crisp = [];
