@@ -2,6 +2,18 @@
   width: 100%;
 }
 
+main {
+  padding: 100px 0;
+}
+
+main.no-padding {
+  padding: 0
+}
+
+.relative {
+  position: relative;
+}
+
 .owl-carousel .owl-dots .owl-dot:hover,
 .owl-carousel .owl-dots .owl-dot:focus {
   box-shadow: none;
@@ -11716,6 +11728,7 @@ footer ul li {
   margin-top: 15px
 }
 
+.big_widget_title h4,
 .dividerHeading h4,
 .widget_title h4 {
   border-bottom: 1px solid #fff;
@@ -11726,6 +11739,13 @@ footer ul li {
   position: relative
 }
 
+.big_widget_title h4 {
+  font-size: 24px;
+  color: #6f6f6f;
+  padding-bottom: 15px;
+}
+
+.big_widget_title h4::before,
 .dividerHeading h4::before,
 .widget_title h4::before {
   bottom: -3px;
@@ -11737,6 +11757,15 @@ footer ul li {
   width: 35px
 }
 
+.big_widget_title h4::before {
+  width: 100px;
+  height: 8px;
+  background: -webkit-linear-gradient(bottom left, #4a69bd, #1abc9c);
+  z-index: 2;
+  bottom: -4px;
+}
+
+.big_widget_title h4::after,
 .dividerHeading h4::after,
 .widget_title h4::after {
   bottom: -1px;
@@ -11746,6 +11775,13 @@ footer ul li {
   left: 0;
   position: absolute;
   width: 80px
+}
+
+.big_widget_title h4::after {
+  width: 100%;
+  background-color: #dadada;
+  height: 3px;
+  z-index: 1;
 }
 
 .dividerHeading h4::after,
@@ -12726,7 +12762,7 @@ a:hover {
 .pagination {
   display: inline-flex;
   position: relative;
-  font-family: "IRANSans(FaNum)"
+  font-family: "IRANSans(FaNum)";
 }
 
 .pagination:before {
@@ -14209,6 +14245,292 @@ a:hover {
   padding-top: 10px;
 }
 
+.news .left {
+  margin-top: 22px;
+}
+
+.news .left .side-menu {
+  margin-top: 20px;
+}
+
+.simple-news {
+  margin-top: 50px;
+}
+
+.news .thumbnail {
+  padding: 0;
+  border-radius: 0;
+}
+
+.news .thumbnail .content {
+  padding: 10px 25px;
+}
+
+.news .thumbnail .content h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.news .thumbnail .content .profile {
+  width: 100%;
+}
+
+.simple-news .thumbnail,
+.news .thumbnail .social .likes,
+.news .thumbnail .content .social,
+.news .thumbnail .content .profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.news .thumbnail .profile .name {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.news .thumbnail .profile .date {
+  font-size: 10px;
+}
+
+.news .thumbnail .profile .specs {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.news .thumbnail .social .likes {
+  width: 100px;
+}
+
+.news .thumbnail .social .likes i {
+  transition: .4s;
+}
+
+.news .thumbnail .social .likes .like-news {
+  font-size: 38px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #ff4040;
+  height: 40px;
+  position: relative;
+}
+
+.news .thumbnail .social .likes .like-news .fas {
+  opacity: 0;
+  position: absolute;
+  top: 1px;
+}
+
+.news .thumbnail .social .likes .like-news.liked .fas {
+  opacity: 1;
+}
+
+.news .thumbnail .social .likes .like-news.liked .far {
+  opacity: 0;
+}
+
+.news .thumbnail .social .likes span {
+  margin-top: 30px;
+  margin-left: 5px;
+  font-family: 'IRANSans_num_web';
+}
+
+.news .thumbnail .content .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-family: "IRANSans(FaNum)";
+}
+
+.simple-news .thumbnail .image {
+  width: 40%;
+}
+
+.news .simple-news .thumbnail .content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.news .simple-news .thumbnail .content p {
+  font-size: 10px;
+  text-align: justify;
+}
+
+.news .simple-news .thumbnail .content hr {
+  margin-bottom: 70px;
+  border-color: #cecece;
+}
+
+.simple-news .thumbnail .content {
+  width: 60%;
+  position: relative;
+}
+
+.simple-news .thumbnail .content {
+  width: 60%;
+  position: relative;
+}
+
+.simple-news .thumbnail .content .social {
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+}
+
+.side-menu .header {
+  padding: 10px 15px;
+  background: -webkit-linear-gradient(bottom left, #4a69bd, #1abc9c);
+}
+
+.side-menu .content {
+  border: 1px solid #cecece;
+  border-top: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-menu .content input {
+  width: 75%;
+  border-radius: 0;
+  font-size: 11px;
+  padding: 25px 20px;
+}
+
+.side-menu .content input:hover,
+.side-menu .content input:focus {
+  outline: none;
+  box-shadow: none;
+  background: none;
+  text-decoration: none;
+  border: 1px solid #ccc;
+}
+
+.side-menu .content button {
+  width: 25%;
+  font-size: 12px;
+  color: #fff;
+}
+
+.side-menu .content ul {
+  width: 100%;
+}
+
+.side-menu .content ul h4 {
+  font-size: 15px;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.side-menu .header h5 {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.pagination>li {
+  margin-right: 10px;
+}
+
+.pagination>li.more {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  border-radius: 5px;
+  font-family: 'IRANSans_num_web';
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #adadad;
+  color: #484848;
+}
+
+.pagination>.active>a {
+  background-color: #15b095;
+  border-color: #15b095;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #15b095;
+  border-color: #15b095;
+}
+
+.pagination:before {
+  display: none;
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span,
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+  border-radius: 5px;
+}
+
+.tutorial .introduction .tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tutorial .introduction .profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.tutorial .introduction .profile .name {
+  font-weight: 500;
+}
+
+.tutorial .introduction .profile .specs {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.tutorial .introduction .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.tutorial .introduction h2 {
+  text-align: justify;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.tutorial .tags .tag {
+  padding: 10px 40px;
+  text-align: center;
+  background-color: #c7c7c7;
+  color: #fff;
+  margin-left: 10px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.tutorial .introduction .tags .tag:last-child {
+  margin-left: 0px;
+}
+
+.tutorial .context {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 32px;
+  color: #9a9a9a;
+  padding: 0 15px;
+}
+
 @media (min-width: 1200px) {}
 
 @media (max-width: 1200px) {
@@ -14221,6 +14543,29 @@ a:hover {
   .about-us .services-price {
     margin-right: 1%;
     margin-top: 20px;
+  }
+  .news .simple-news .thumbnail .content h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .news .simple-news .thumbnail .content .context {
+    font-size: 15px;
+  }
+  .simple-news .thumbnail .content .social {
+    width: 93%;
+  }
+  .side-menu .content button {
+    width: 30%;
+  }
+  .side-menu .content input {
+    width: 70%;
+  }
+  .tutorial .introduction h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .tutorial .big_widget_title {
+    margin-top: 30px;
   }
 }
 
@@ -14239,13 +14584,13 @@ a:hover {
   }
 }
 
-@media (min-width: 996px) {
+@media (min-width: 992px) {
   .navbar .searchbox-xs {
     display: none;
   }
 }
 
-@media (max-width: 996px) {
+@media (max-width: 992px) {
   .genius-or-normal div.line-center {
     border-left: none;
     border-bottom: 1px solid #EBEBEF;
@@ -14261,9 +14606,19 @@ a:hover {
     margin-left: 0;
     margin-bottom: 20px;
   }
+  .news .right {
+    margin-top: 30px;
+  }
+  .serviceBox.yellow:hover .title {
+    color: #f1b02b;
+  }
+  .serviceBox.yellow .read-more {
+    background: linear-gradient(to top, #f1b02b, #fddb18);
+    transform: translateY(0);
+  }
 }
 
-@media (min-width: 768px) and (max-width: 996px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .customer-service {
     border-radius: 5px;
   }
@@ -14324,6 +14679,16 @@ a:hover {
   }
   .about-us.services ol {
     padding-right: 15px;
+  }
+  .simple-news .thumbnail {
+    display: block;
+  }
+  .simple-news .thumbnail .content,
+  .simple-news .thumbnail .image {
+    width: 100%;
+  }
+  .side-menu .content button {
+    margin-bottom: 0;
   }
 }
 
@@ -14405,6 +14770,27 @@ a:hover {
   .sponsers-slide {
     display: none
   }
+  .tutorial .introduction h2 {
+    font-size: 20px;
+    line-height: 35px;
+}
+}
+
+@media (max-width: 500px) {
+  .pagination>li>a,
+  .pagination>li>span {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination>li.more {
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -14417,6 +14803,13 @@ a:hover {
   }
   .ordering-process h2 {
     font-size: 22px;
+  }
+  .pagination>li {
+    margin-right: 5px;
+  }
+  .pagination-set {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -14437,4 +14830,37 @@ a:hover {
     padding: 20px;
     background: -webkit-linear-gradient(bottom left, #4a69bd, #1abc9c);
   }
+  .news .thumbnail .profile .specs {
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  .news .thumbnail .social .likes .like-news {
+    font-size: 25px;
+  }
+  .news .thumbnail .social .likes span {
+    margin-top: 25px;
+    font-size: 11px;
+  }
+  .news .thumbnail .content .profile img {
+    width: 50px;
+    height: 50px;
+  }
+  .simple-news .thumbnail .content .social {
+    width: 86%;
+  }
+  .side-menu .content {
+    display: block;
+  }
+  .side-menu .content button,
+  .side-menu .content input {
+    width: 100%;
+  }
+  .attr-nav {
+    font-size: 13px;
+  }
+  .tutorial .tags .tag {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
 }

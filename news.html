@@ -150,13 +150,13 @@
           <li>
             <a href="/price/">تعرفه خدمات</a>
           </li>
-          <li>
+          <li class="active">
             <a href="/home/posts/">اخبار</a>
           </li>
           <li>
             <a href="/home/tutorials/">آموزش</a>
           </li>
-          <li class="active">
+          <li>
             <a href="/contact/">تماس با ما</a>
           </li>
           <li>
@@ -167,7 +167,6 @@
       <!-- /.navbar-collapse -->
     </div>
   </nav>
-  <!-- ./ navigation -->
   <div class="page-address">
     <div class="text-center">
       <ul class="list-inline">
@@ -175,54 +174,209 @@
         <li>
           <i class="fas fa-arrow-left"></i>
         </li>
-        <li><a href="#">تماس با ما</a></li>
+        <li><a href="#">اخبار</a></li>
       </ul>
-      <h1>تماس با ما</h1>
+      <h1>اخبار</h1>
     </div>
   </div>
-  <main class="no-padding">
-    <div class="form-bg">
-      <div class="container width-full">
+
+
+  <main>
+    <div class="news">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-2 col-md-3"></div>
-          <div class="col-sm-8 col-md-6">
-            <div class="tab" role="tabpanel">
-              <!-- Tab panes -->
-              <div class="tab-content tabs">
-                <div class="tab-pane fade in active" id="Section1" role="tabpanel">
-                  <form class="form-horizontal" method="POST">
-                    <input name="csrfmiddlewaretoken" type="hidden" value="nea6l1hyE6dXowEMXzSiJCT6vYQqlVI918DmTwQkfEYmpB53D8BvRdNAbC6Sx1jH" />
-                    <div class="form-group">
-                      <label for="id_from_email">ایمیل</label>
-                      <input class="form-control disabled" id="id_from_email" name="from_email" required="" type="email" />
+          <div class="col-md-4 col-lg-4 left hidden-md hidden-lg">
+            <div class="side-menu">
+              <div class="header">
+                <h5>جستجو</h5>
+              </div>
+              <div class="content">
+                <input type="text" class="form-control" placeholder="کلمه مورد نظر رو جستجو کنید">
+                <button class="btn btn-primary">جستجو کن</button>
+              </div>
+            </div>
+            <div class="side-menu">
+              <div class="header">
+                <h5>جستجو</h5>
+              </div>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                </ul>
+                <ul class="list-unstyled">
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-8 right">
+            <div class="big_widget_title">
+              <h4>
+                <span>جدیدترین اخبار</span>
+              </h4>
+            </div>
+            <div class="news-items">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="thumbnail">
+                    <img class="img-responsive" src="static/img/img1.png" alt="">
+                    <div class="content">
+                      <h4 class="title"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</a></h4>
+                      <div class="social">
+                        <div class="profile">
+                          <img class="img-responsive" src="static/img/sepehrakbarzadeh.jpg" alt="">
+                          <div class="specs">
+                            <h5 class="name">سپهر اکبرزاده</h5>
+                            <p class="date">تاریخ : <span>۱۳۹۷/۰۶/۰۶</span></p>
+                          </div>
+                        </div>
+                        <div class="likes">
+                          <span class="counts">256</span>
+                          <div class="like-news">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="id_fullname">نام و نام خانوادگی</label>
-                      <input class="form-control disabled" id="id_fullname" name="fullname" required="" type="text" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="thumbnail">
+                    <img class="img-responsive" src="static/img/img1.png" alt="">
+                    <div class="content">
+                      <h4 class="title"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</a></h4>
+                      <div class="social">
+                        <div class="profile">
+                          <img class="img-responsive" src="static/img/sepehrakbarzadeh.jpg" alt="">
+                          <div class="specs">
+                            <h5 class="name">سپهر اکبرزاده</h5>
+                            <p class="date">تاریخ : <span>۱۳۹۷/۰۶/۰۶</span></p>
+                          </div>
+                        </div>
+                        <div class="likes">
+                          <span class="counts">256</span>
+                          <div class="like-news">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="id_subject">موضوع</label>
-                      <input class="form-control disabled" id="id_subject" name="subject" required="" type="text" />
-                    </div>
-                    <div class="form-group">
-                      <label for="id_message">پیام</label>
-                      <textarea class="form-control disabled" cols="40" id="id_message" name="message" required="" rows="10"></textarea>
-                    </div>
-                    <script src="https://www.google.com/recaptcha/api.js"></script>
-                    <div class="g-recaptcha" data-sitekey="6Lf5zGUUAAAAAIQjgvUr0N_4dk3UjAoFf9v9ObvD"></div>
-                    <center>
-                      <button class="btn no-animation" type="submit">ثبت عملیات</button>
-                    </center>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-2 col-md-3"></div>
+          <div class="col-md-4 col-lg-4 left hidden-sm hidden-xs">
+            <div class="side-menu">
+              <div class="header">
+                <h5>جستجو</h5>
+              </div>
+              <div class="content">
+                <input type="text" class="form-control" placeholder="کلمه مورد نظر رو جستجو کنید">
+                <button class="btn btn-primary">جستجو کن</button>
+              </div>
+            </div>
+            <div class="side-menu">
+              <div class="header">
+                <h5>جستجو</h5>
+              </div>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                </ul>
+                <ul class="list-unstyled">
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                  <li><a href="#"><h4>افترافکت</h4></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 simple-news">
+            <div class="big_widget_title">
+              <h4>
+                <span> اخبار</span>
+              </h4>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="thumbnail">
+                <div class="image">
+                  <img class="img-responsive center-block" src="static/img/3d-box-1.png" alt="">
+                </div>
+                <div class="content">
+                  <h4 class="title"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</a></h4>
+                  <p class="context">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون ۷۲۰ * ۷۲۰ . بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و</p>
+                  <hr>
+                  <div class="social">
+                    <div class="profile">
+                      <img class="img-responsive" src="static/img/sepehrakbarzadeh.jpg" alt="">
+                      <div class="specs">
+                        <h5 class="name">سپهر اکبرزاده</h5>
+                        <p class="date">تاریخ : <span>۱۳۹۷/۰۶/۰۶</span></p>
+                      </div>
+                    </div>
+                    <div class="likes">
+                      <span class="counts">256</span>
+                      <div class="like-news">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="thumbnail">
+                <div class="image">
+                  <img class="img-responsive center-block" src="static/img/3d-box-1.png" alt="">
+                </div>
+                <div class="content">
+                  <h4 class="title"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</a></h4>
+                  <p class="context">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون ۷۲۰ * ۷۲۰ . بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و</p>
+                  <hr>
+                  <div class="social">
+                    <div class="profile">
+                      <img class="img-responsive" src="static/img/sepehrakbarzadeh.jpg" alt="">
+                      <div class="specs">
+                        <h5 class="name">سپهر اکبرزاده</h5>
+                        <p class="date">تاریخ : <span>۱۳۹۷/۰۶/۰۶</span></p>
+                      </div>
+                    </div>
+                    <div class="likes">
+                      <span class="counts">256</span>
+                      <div class="like-news">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center pagination-set">
+              <ul class="pagination">
+                <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                <li><a href="#">11</a></li>
+                <li><a href="#">10</a></li>
+                <li class="more">...</li>
+                <li><a href="#">2</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
+
+
   <footer>
     <div class="container width-full">
       <div class="row">

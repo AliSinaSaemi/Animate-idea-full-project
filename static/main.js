@@ -78,3 +78,9 @@ $(document).ready(function () {
     $("body > .page-address").removeClass("page-address-down");
   });
 });
+
+$(document).ready(function () {
+  $(".like-news").click(function () {
+    $(this).toggleClass("liked");
+  });
+});
